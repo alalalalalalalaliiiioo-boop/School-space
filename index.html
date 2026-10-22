@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سفری به جهان شگفت‌انگیز | مطالعات اجتماعی نهم</title>
+<style>
+:root{--bg:#071126;--panel:#111f3e;--cyan:#72e3ff;--gold:#ffd36a;--text:#f4f7ff;--muted:#c5d2ee}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Tahoma,Arial,sans-serif;background:radial-gradient(circle at 50% 0,#20396d 0,#0a1530 42%,#050b19 100%);color:var(--text);line-height:1.9}
+header{padding:24px 16px 34px;text-align:center;overflow:hidden;position:relative}
+.emoji{font-size:clamp(2rem,7vw,4rem);letter-spacing:12px}
+h1{font-size:clamp(1.7rem,5vw,3rem);color:var(--cyan);margin:8px 0}
+.subtitle{color:var(--muted);font-size:1.05rem}
+nav{position:sticky;top:0;z-index:5;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;padding:10px;background:#071126eF;border-bottom:1px solid #29406c}
+nav a{color:var(--text);text-decoration:none;padding:7px 12px;border-radius:20px;background:#19294a;font-size:.9rem}
+nav a:hover{background:#2c4a78}
+main{width:min(1000px,92%);margin:auto}
+section,.card{background:linear-gradient(145deg,#14264aee,#0e1a35ee);border:1px solid #2b4774;border-radius:20px;padding:22px;margin:22px 0;box-shadow:0 12px 32px #0003}
+h2{color:var(--gold);margin-top:0;font-size:1.45rem}
+h3{color:var(--cyan)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.fact{padding:14px;background:#0a1731;border-radius:14px;border:1px solid #29436e}
+.fact strong{color:var(--cyan)}
+.note{color:var(--muted);font-size:.92rem}
+.diagram{position:relative;height:320px;max-width:600px;margin:15px auto;background:radial-gradient(circle,#172b51,#091329);border-radius:18px;overflow:hidden}
+.sun{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:62px;height:62px;border-radius:50%;background:radial-gradient(circle,#fff9b0,#ffc533 55%,#ff7a24);box-shadow:0 0 25px 8px #ffb52b77;display:grid;place-items:center;font-size:30px}
+.orbit{position:absolute;left:50%;top:50%;width:270px;height:190px;border:1px solid #8ea8d5a8;border-radius:50%;transform:translate(-50%,-50%)}
+.earth-orbit-animation{position:absolute;left:50%;top:50%;width:270px;height:190px;transform:translate(-50%,-50%);animation:orbitSun 12s linear infinite}
+.earth{position:absolute;left:calc(100% - 23px);top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;background:linear-gradient(115deg,#4ac9ff 0 35%,#2581d7 36% 57%,#55cf86 58% 75%,#2374c4 76%);box-shadow:0 0 13px #62d5ff88;overflow:hidden}
+.earth:after{content:"";position:absolute;inset:0;border-radius:50%;background:linear-gradient(90deg,transparent 25%,#07112699 90%);animation:spinEarth 4s linear infinite}
+.moon-orbit{position:absolute;inset:-13px;border:1px dashed #c9d7ef99;border-radius:50%;animation:moonPath 3s linear infinite}
+.moon{position:absolute;top:50%;right:-5px;transform:translateY(-50%);width:12px;height:12px;border-radius:50%;background:#e5e7ed;box-shadow:0 0 7px #fff8}
+@keyframes orbitSun{from{transform:translate(-50%,-50%) rotate(0)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes spinEarth{from{transform:translateX(-12px)}to{transform:translateX(12px)}}
+@keyframes moonPath{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+.eclipse{display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:center;margin:14px 0;padding:14px;background:#09152c;border-radius:14px}
+.bodyball{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:28px}
+.sunball{background:#ffbb35;box-shadow:0 0 18px #ffb32c88}.earthball{background:#248bd4}.moonball{background:#c8ccd5}
+.arrow{font-size:1.5rem;color:var(--gold)}
+button{font-family:inherit;border:0;background:var(--cyan);color:#071126;font-weight:bold;border-radius:12px;padding:11px 17px;cursor:pointer;font-size:1rem}
+button:hover{filter:brightness(1.08)}
+#feedback{font-weight:bold;color:var(--gold);min-height:30px}
+footer{text-align:center;color:var(--muted);padding:25px 10px 40px}
+@media(max-width:500px){.diagram{height:280px}.orbit,.earth-orbit-animation{width:230px;height:165px}section,.card{padding:17px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:0.001ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header>
+<div class="emoji">🪐 🌍 🌌</div>
+<h1>سفری به جهان شگفت‌انگیز</h1>
+<div class="subtitle">کنفرانس مطالعات اجتماعی پایه نهم</div>
+<p class="note">نگاهی به زمین، ماه و شگفتی‌های فضا</p>
+</header>
+<nav>
+<a href="#motions">حرکت‌ها</a><a href="#model">مدل متحرک</a><a href="#eclipses">گرفتگی‌ها</a><a href="#quiz">آزمون کوتاه</a>
+</nav>
+<main>
+<section id="motions">
+<h2>🌍 زمین و ماه چه حرکت‌هایی دارند؟</h2>
+<div class="grid">
+<div class="fact"><h3>چرخش زمین</h3><p>زمین به دور محور خودش می‌چرخد. این حرکت تقریباً ۲۴ ساعت طول می‌کشد و باعث به‌وجود آمدن شب و روز می‌شود.</p></div>
+<div class="fact"><h3>گردش زمین</h3><p>زمین به دور خورشید می‌گردد. یک دور کامل تقریباً ۳۶۵ روز و ۶ ساعت طول می‌کشد و یک سال را می‌سازد.</p></div>
+<div class="fact"><h3>حرکت ماه</h3><p>ماه به دور زمین می‌گردد و تقریباً در ۲۷ روز و ۸ ساعت یک دور نسبت به ستارگان کامل می‌کند. شکل‌های مختلف ماه را در آسمان می‌بینیم.</p></div>
+</div>
+<p class="note">یادت باشد: اندازه‌ها و سرعت‌ها در این مدل واقعی نیستند؛ انیمیشن فقط برای فهم بهتر حرکت‌هاست.</p>
+</section>
+<section id="model">
+<h2>✨ مدل متحرک زمین، ماه و خورشید</h2>
+<p>زمین در مدار خودش دور خورشید می‌گردد، هم‌زمان به دور محور خودش می‌چرخد و ماه نیز به دور زمین حرکت می‌کند.</p>
+<div class="diagram" role="img" aria-label="مدل آموزشی حرکت زمین به دور خورشید و ماه به دور زمین">
+<div class="orbit"></div><div class="sun">☀️</div>
+<div class="earth-orbit-animation"><div class="earth"><div class="moon-orbit"><div class="moon"></div></div></div></div>
+</div>
+<p class="note">مدل ساده‌شده است و برای آموزش طراحی شده؛ فاصله‌ها و اندازه‌ها در مقیاس واقعی نیستند.</p>
+</section>
+<section id="eclipses">
+<h2>🌘 خورشیدگرفتگی و ماه‌گرفتگی</h2>
+<div class="grid">
+<div class="fact">
+<h3>☀️ پدیده خورشیدگرفتگی</h3>
+<p>وقتی ماه بین خورشید و زمین قرار می‌گیرد، سایهٔ ماه روی بخشی از زمین می‌افتد و خورشید از دید آن مناطق، تمام یا بخشی از آن پوشیده می‌شود.</p>
+<div class="eclipse"><div class="bodyball sunball">☀️</div><span class="arrow">←</span><div class="bodyball moonball">🌑</div><span class="arrow">←</span><div class="bodyball earthball">🌍</div></div>
+</div>
+<div class="fact">
+<h3>🌕 پدیده ماه‌گرفتگی</h3>
+<p>وقتی زمین بین خورشید و ماه قرار می‌گیرد، ماه وارد سایهٔ زمین می‌شود. این اتفاق فقط هنگام ماه کامل ممکن است رخ دهد.</p>
+<div class="eclipse"><div class="bodyball sunball">☀️</div><span class="arrow">←</span><div class="bodyball earthball">🌍</div><span class="arrow">←</span><div class="bodyball moonball">🌕</div></div>
+</div>
+</div>
+<div class="fact"><strong>نکتهٔ ایمنی:</strong> هرگز به خورشیدگرفتگی مستقیم نگاه نکن؛ برای مشاهدهٔ خورشیدگرفتگی باید از عینک مخصوص و استاندارد استفاده کرد.</div>
+</section>
+<section>
+<h2>🚀 چند نکتهٔ جالب</h2>
+<div class="grid">
+<div class="fact"><strong>یک روز</strong><p>تقریباً ۲۴ ساعت طول می‌کشد.</p></div>
+<div class="fact"><strong>یک سال</strong><p>تقریباً ۳۶۵ روز و ۶ ساعت است.</p></div>
+<div class="fact"><strong>نور خورشید</strong><p>حدود ۸ دقیقه و ۲۰ ثانیه طول می‌کشد تا به زمین برسد.</p></div>
+</div>
+</section>
+<section id="quiz">
+<h2>🧠 آزمون کوتاه</h2>
+<p id="question">۱) چه حرکتی باعث به‌وجود آمدن شب و روز می‌شود؟</p>
+<div class="grid" id="options">
+<button onclick="answer(0)">گردش زمین به دور خورشید</button>
+<button onclick="answer(1)">چرخش زمین به دور محور خودش</button>
+<button onclick="answer(2)">گردش ماه به دور زمین</button>
+</div>
+<p id="feedback" aria-live="polite"></p>
+<button onclick="nextQuestion()">سؤال بعدی</button>
+</section>
+</main>
+<footer>تهیه‌شده برای کنفرانس مطالعات اجتماعی پایه نهم 🌌</footer>
+<script>
+const questions=[
+{q:"۱) چه حرکتی باعث به‌وجود آمدن شب و روز می‌شود؟",a:["گردش زمین به دور خورشید","چرخش زمین به دور محور خودش","گردش ماه به دور زمین"],correct:1},
+{q:"۲) در خورشیدگرفتگی، کدام جرم بین خورشید و زمین قرار می‌گیرد؟",a:["ماه","مریخ","زحل"],correct:0},
+{q:"۳) در ماه‌گرفتگی، کدام جرم بین خورشید و ماه قرار می‌گیرد؟",a:["ماه","زمین","مشتری"],correct:1},
+{q:"۴) گردش زمین به دور خورشید تقریباً چقدر طول می‌کشد؟",a:["یک روز","یک ماه","یک سال"],correct:2}
+];
+let current=0,locked=false;
+function render(){document.getElementById("question").textContent=questions[current].q;const box=document.getElementById("options");box.innerHTML="";questions[current].a.forEach((v,i)=>{const b=document.createElement("button");b.textContent=v;b.onclick=()=>answer(i);box.appendChild(b)});document.getElementById("feedback").textContent="";locked=false}
+function answer(i){if(locked)return;locked=true;document.getElementById("feedback").textContent=i===questions[current].correct?"آفرین! پاسخ درست است 🎉":"اشکالی نداره! پاسخ درست: "+questions[current].a[questions[current].correct];}
+function nextQuestion(){current=(current+1)%questions.length;render()}
+</script>
+</body>
+</html>
